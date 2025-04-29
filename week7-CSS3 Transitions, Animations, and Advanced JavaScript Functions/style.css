@@ -1,0 +1,58 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Animation when button is clicked */
+  .animate-button {
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  .animate-button:active {
+    animation: buttonClick 0.5s ease forwards;
+  }
+  
+  @keyframes buttonClick {
+    0% {
+      transform: scale(1);
+      background-color: #3498db;
+    }
+    50% {
+      transform: scale(1.2);
+      background-color: #e74c3c;
+    }
+    100% {
+      transform: scale(1);
+      background-color: #3498db;
+    }
+  }
+  
+  /* Preferences Section */
+  .preferences {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  input[type="color"] {
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
